@@ -8,7 +8,7 @@ require_once 'proses.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple Crud - PHP</title>
+    <title>Simple Crud</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -17,7 +17,7 @@ require_once 'proses.php';
     <div class="row justify-content-center">
         <form action="proses.php" method="POST">
             
-            <!-- for update data id -->
+            <!-- for update data -->
             <input type="hidden" name="id" value=<?php echo $id; ?>>
 
             <div class="form-group">
@@ -51,7 +51,7 @@ require_once 'proses.php';
         <?php
             echo $_SESSION["message"];
             unset($_SESSION["message"]);
-            session_destroy();
+            //session_destroy();
         ?>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
