@@ -22,11 +22,11 @@ require_once 'proses.php';
 
                 <div class="form-group">
                     <label>Club</label>
-                    <input type="text" class="form-control" name="clubName" placeholder="Enter Club Name" value="<?php echo $clubName; ?>">
+                    <input type="text" class="form-control" name="clubName" placeholder="Enter Club Name" required value="<?php echo $clubName; ?>">
                 </div>
                 <div class="form-group">
                     <label>Location</label>
-                    <input type="text" class="form-control" name="clubLocation" placeholder="Enter Club Location" value="<?php echo $clubLocation; ?>">
+                    <input type="text" class="form-control" name="clubLocation" placeholder="Enter Club Location" required value="<?php echo $clubLocation; ?>">
                 </div>
                 <div class="form-group">
                     <?php if($update == true) : ?>
