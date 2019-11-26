@@ -30,9 +30,9 @@ require_once 'proses.php';
                 </div>
                 <div class="form-group">
                     <?php if($update == true) : ?>
-                        <button class="btn btn-sm btn-info" type="submit" name="update">Update</button>
+                        <button class="btn btn-sm btn-info btn-block" type="submit" name="update">Update</button>
                         <?php else: ?>
-                            <button class="btn btn-sm btn-primary" type="submit" name="save">Save</button>
+                            <button class="btn btn-sm btn-primary btn-block" type="submit" name="save">Save</button>
                         <?php endif ?>
                     </div>
                 </form>
